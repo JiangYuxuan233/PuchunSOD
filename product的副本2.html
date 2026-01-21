@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOD养生产品｜普春堂</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --emerald-900: #064e3b; --emerald-600: #059669; }
+        body { font-family: 'Inter', 'Noto Serif SC', serif; background-color: #fcfdfc; color: #1e293b; }
+        .serif { font-family: 'Noto Serif SC', serif; }
+
+        /* 新增：广告词徽章质感 */
+        .tag {
+            background: linear-gradient(135deg, rgba(6,78,59,.10), rgba(5,150,105,.08));
+            border: 1px solid rgba(5,150,105,.18);
+            box-shadow: 0 10px 25px rgba(6,78,59,.06);
+        }
+        .tagDot {
+            background: radial-gradient(circle at 30% 30%, rgba(5,150,105,.95), rgba(6,78,59,.95));
+        }
+
+        /* 新增：卡片顶部小卖点标签 */
+        .chip {
+            background: rgba(5,150,105,.08);
+            border: 1px solid rgba(5,150,105,.18);
+            color: rgba(6,78,59,.95);
+        }
+
+        /* 新增：轻微背景光晕（不破坏极简） */
+        .softGlow {
+            position: relative;
+            isolation: isolate;
+        }
+        .softGlow::before{
+            content:"";
+            position:absolute;
+            inset:-40px -20px auto -20px;
+            height:220px;
+            background: radial-gradient(closest-side, rgba(5,150,105,.10), transparent 70%);
+            filter: blur(6px);
+            z-index:-1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="serif text-2xl font-bold text-emerald-900 tracking-tighter flex items-center gap-2">
+        <span class="w-8 h-8 bg-emerald-900 rounded-full flex items-center justify-center text-white text-xs">P</span>
+        普春堂
+      </a>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <header class="py-24 px-6 text-center softGlow">
+      <p class="text-slate-500 max-w-2xl mx-auto leading-loose font-light">
+          通过科学萃取，将高活性 SOD 转化为可日常饮用的活性液体，为您开启细胞级保护。
+      </p>
+
+      <!-- ✅ 新增：广告词徽章区 -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <span class="tag inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs text-emerald-900">
+              <i class="tagDot w-2 h-2 rounded-full"></i>
+              清除自由基
+          </span>
+          <span class="tag inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs text-emerald-900">
+              <i class="tagDot w-2 h-2 rounded-full"></i>
+              强免疫
+          </span>
+          <span class="tag inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs text-emerald-900">
+              <i class="tagDot w-2 h-2 rounded-full"></i>
+              抗氧化新选择
+          </span>
+          <span class="tag inline-flex items-center gap-2 px-5 py-2 rounded-full text-xs text-emerald-900">
+              <i class="tagDot w-2 h-2 rounded-full"></i>
+              天然活性 · 科学守护
+          </span>
+      </div>
+
+      <!-- ✅ 可选：更“广告感”的一句话（不长，增强记忆点） -->
+      <p class="mt-8 text-xs text-slate-400 tracking-wide">
+          从日常状态管理出发，为身体提供更稳定的抗氧化支持。
+      </p>
+  </header>
+
+  <!-- 产品区 -->
+  <section class="max-w-7xl mx-auto px-6 pb-32 grid md:grid-cols-2 gap-8">
+
+      <div class="bg-white rounded-[2.5rem] p-12 border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition duration-500 flex flex-col justify-between">
+          <div>
+              <div class="flex justify-between items-start mb-6 gap-4">
+                  <div>
+                      <h2 class="serif text-3xl font-bold text-emerald-950">SOD活性细胞菌液</h2>
+                      <!-- ✅ 新增：产品小标签 -->
+                      <div class="mt-3 flex flex-wrap gap-2">
+                          <span class="chip text-[10px] px-3 py-1 rounded-full">深度调理</span>
+                          <span class="chip text-[10px] px-3 py-1 rounded-full">活性菌群协同</span>
+                          <span class="chip text-[10px] px-3 py-1 rounded-full">抗氧化支持</span>
+                      </div>
+                  </div>
+
+                  <span class="text-2xl font-bold text-emerald-600 whitespace-nowrap">
+                      ￥50 <small class="text-xs text-slate-400 font-normal">/ 瓶</small>
+                  </span>
+              </div>
+
+              <p class="text-sm text-slate-500 mb-8 leading-relaxed">
+                  <span class="font-bold text-emerald-900">核心优势：</span>
+                  SOD 含量极高，采用生物菌群活性技术强化吸收效率。专为深度调理与长期抗氧化防护设计。
+              </p>
+
+              <ul class="space-y-4 mb-10 text-xs text-slate-400 font-medium">
+                  <li class="flex items-center gap-2 border-b border-slate-50 pb-3">容量规格：200 毫升 / 瓶</li>
+                  <li class="flex items-center gap-2 border-b border-slate-50 pb-3">应用场景：日常饮用、皮肤外敷、深度滋养</li>
+              </ul>
+
+              <!-- ✅ 新增：卖点短句（更像“广告落点”） -->
+              
+          </div>
+      </div>
+
+      <div class="bg-white rounded-[2.5rem] p-12 border border-slate-100 shadow-sm hover:shadow-xl hover:border-emerald-100 transition duration-500 flex flex-col justify-between">
+          <div>
+              <div class="flex justify-between items-start mb-6 gap-4">
+                  <div>
+                      <h2 class="serif text-3xl font-bold text-emerald-950">SOD活性细胞液</h2>
+                      <!-- ✅ 新增：产品小标签 -->
+                      <div class="mt-3 flex flex-wrap gap-2">
+                          <span class="chip text-[10px] px-3 py-1 rounded-full">日常补给</span>
+                          <span class="chip text-[10px] px-3 py-1 rounded-full">清爽易饮</span>
+                          <span class="chip text-[10px] px-3 py-1 rounded-full">抗氧化新选择</span>
+                      </div>
+                  </div>
+
+                  <span class="text-2xl font-bold text-emerald-600 whitespace-nowrap">
+                      ￥40 <small class="text-xs text-slate-400 font-normal">/ 瓶</small>
+                  </span>
+              </div>
+
+              <p class="text-sm text-slate-500 mb-8 leading-relaxed">
+                  <span class="font-bold text-emerald-900">核心优势：</span>
+                  性价比之选。300ml 大容量装，口感清爽且易于吸收，是居家常备的基础天然抗氧化补给。
+              </p>
+
+              <ul class="space-y-4 mb-10 text-xs text-slate-400 font-medium">
+                  <li class="flex items-center gap-2 border-b border-slate-50 pb-3">容量规格：300 毫升 / 瓶</li>
+                  <li class="flex items-center gap-2 border-b border-slate-50 pb-3">应用场景：基础抗氧化、日常饮用</li>
+              </ul>
+
+              <!-- ✅ 新增：卖点短句 -->
+              
+          </div>
+      </div>
+  </section>
+
+  <footer class="py-12 text-center text-[10px] text-slate-400 uppercase tracking-[0.2em]">
+      © 2024 普春堂 | SOD萃取 十代选育良种
+  </footer>
+
+</body>
+</html>
